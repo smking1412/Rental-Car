@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_container"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/bottom_sheet_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_layout">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/dheader"
+            android:id="@+id/add_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new car"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="22dp"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_action_delete"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/add_label"
+            android:layout_marginStart="60dp"
+            android:id="@+id/model_name_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/model_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Car Model Name"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/box"
+            android:gravity="center"
+            android:layout_below="@+id/model_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/img"
+            android:background="@drawable/border_bg"
+            android:src="@drawable/ic_action_upload"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location_layout"
+            android:layout_toEndOf="@+id/img"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="30dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Car Location"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/img"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="10"
+            android:layout_below="@id/location_layout"
+            android:id="@+id/rates_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/initial_layout"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:id="@+id/initial_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Initial Rate $"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/per_hour_layout"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:id="@+id/per_hour_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Per Hour $"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/box"
+                android:layout_marginStart="30dp"
+                android:id="@+id/seats_layout"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:id="@+id/seats"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Seats"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/number_plate_layout"
+                android:layout_toEndOf="@+id/seats_layout"
+                android:layout_below="@+id/box"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:id="@+id/number_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Number Plate"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/number_plate_layout"
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderless_colored"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="   Add   " />
+    </RelativeLayout>
+</ScrollView>

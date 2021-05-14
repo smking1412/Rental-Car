@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HelpAndSuppportActivity">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            app:title="Help And Support"/>
+
+
+
+
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
+                android:text="FAQs"
+                android:textColor="@color/dheader"
+                android:textSize="23dp"
+                android:textStyle="bold|italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/abc">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_down"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="1)What type of driver's license is required?"
+                    android:textColor="@color/dheader"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:background="@color/light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="CarManiaa requires a valid Indain driver's license.It's critical that the license is an original.The License must be for a light motor vehicle(car).Members do NOT need a specific cab license that is associated with a yellow board plate. "
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cv1"
+                android:id="@+id/cv2"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a1"
+                    android:drawableRight="@drawable/ic_down"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="2)What happens id I return the car late?"
+                    android:textColor="@color/dheader"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2"
+                    android:background="@color/light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="a) Standard hourly fee will be applicable per hour of delay. Weekend or weedays delays will be charged accordingly.  b) Free KMs will be given at 10 km per hour of delay.            c) In addition to the standard hourly fee, every hour of delay would be charged at Rs.300/hour. "
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cv2"
+                android:id="@+id/cv3"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a2"
+                    android:drawableRight="@drawable/ic_down"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="3)Is there a km limit to how much I can drive?"
+                    android:textColor="@color/dheader"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3"
+                    android:background="@color/light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="Each reservaion comes with 10km/hr with a maximum daily driving limit of 240km/day. For example, a 5 hour reservation would come with 50 km in driving at no additional charge. There is a per km charge for each km beyond that point. "
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cv3"
+                android:id="@+id/cv4"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a3"
+                    android:drawableRight="@drawable/ic_down"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="4)What in case of accidents?"
+                    android:textColor="@color/dheader"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4"
+                    android:background="@color/light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="Our driver will get in touch with the Car's location and we will solve the issue at the earliest."
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cv4"
+                android:id="@+id/cv5"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a4"
+                    android:drawableRight="@drawable/ic_down"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="5)What is the damage fee and when does it apply?"
+                    android:textColor="@color/dheader"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv5"
+                    android:background="@color/light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="Damage fee applies when the member is involved in an incident (including but not limited to a collision or misuse of the vehicle). The member will be obligated to pay the repair cost (upto Rs.10,000) or the standard insurance deductible payment (upto Rs.10,000).The payment will be deducted from the security deposit itself."
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cv5"
+                android:id="@+id/cv6"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="2dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Contact us"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+</ScrollView>

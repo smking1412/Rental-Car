@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".WalletActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Safar-Wallet"
+        android:id="@+id/toolbar">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        app:lottie_fileName="walletanimation.json"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="-80dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_marginTop="-60dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/actual_balance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/textVie2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.5dp"
+            android:background="@color/lightwhite"
+            android:gravity="center"
+            android:text="BALANCE"
+            android:layout_weight="5"
+            android:textColor="@color/wallet"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/w_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="5"
+            android:background="@color/lightwhite"
+            android:gravity="center"
+            android:text="$ 0"
+            android:textColor="@color/wallet"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actual_balance"
+        android:layout_alignParentStart="true">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:drawableLeft="@drawable/name_icon_small"
+            android:drawablePadding="10dp"
+            android:id="@+id/w_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Pravin mane"
+            android:padding="2dp"
+            android:textColor="@color/dheader"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/email_icon_small"
+            android:id="@+id/w_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/dheader"
+            android:textSize="18dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/phonen_icon_small"
+            android:id="@+id/w_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/dheader"
+            android:textSize="18dp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/borderless_colored"
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="add money" />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>

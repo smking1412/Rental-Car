@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightwhite"
+    tools:context=".VerifyLicenceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:title="Verify Licence">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/licence_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/SplitLine_hor"
+            android:layout_width="match_parent"
+            android:layout_height= "2dp"
+            android:background="@color/lightwhite" />
+
+        <TextView
+            android:id="@+id/enter_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:text="Enter Your Driving Licence Number"
+            android:textSize="16dp" />
+        <View
+            android:id="@+id/SplitLine2"
+            android:layout_width="match_parent"
+            android:layout_height= "2dp"
+            android:background="@color/lightwhite" />
+        <EditText
+            android:id="@+id/licence_number"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"
+            android:hint="XXXXXXXXXXX"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/SplitLine"
+            android:layout_width="match_parent"
+            android:layout_height= "2dp"
+            android:background="@color/lightwhite" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit_licence"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_below="@+id/licence_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/borderless_colored"/>
+</RelativeLayout>

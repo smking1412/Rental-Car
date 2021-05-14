@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#e4e3cb</color>
+    <color name="colorAccent">#8b8185</color>
+    <color name="green">#29eb29</color>
+    <color name="transpGreen">#A629EB29</color>
+    <color name="dgreen">#038c03</color>
+    <color name="mgreen">#4c9b08</color>
+    <color name="header">#e1222222</color>
+    <color name="dheader">#f0181818</color>
+    <color name="white">#ffffff</color>
+    <color name="mildwhite">#e7dfdf</color>
+    <color name="wallet">#086b85</color>
+    <color name="lightwhite">#e9e9f5</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="light_gray">#e1dfdf</color>
+    <color name="dark_gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="red">#FF0000</color>
+    <color name="neongreen">#C5B0F709</color>
+    <color name="black">#000001</color>
+    <color name="dustwhite">#fafafa</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="light_green">#0fe81d</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#2196F3</color>
+
+
+</resources>

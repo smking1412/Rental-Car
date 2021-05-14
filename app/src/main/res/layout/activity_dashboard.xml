@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DashboardActivity"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dustwhite">
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/frontcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dashtop" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_marginTop="30dp"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:minHeight="?attr/actionBarSize"
+            app:title="" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardview"
+            android:layout_below="@+id/frontcar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-40dp"
+            android:backgroundTint="@color/neongreen"
+            android:elevation="90dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/car"/>
+
+                <TextView
+                    android:id="@+id/img"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="match_parent"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="@string/need_a_car"
+                    android:textColor="@color/dheader"
+                    android:textSize="25dp" />
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/fastforward"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewoffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OFFERS"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:id="@+id/offer1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/lo"/>
+                <ImageView
+                    android:id="@+id/offer2"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/lo"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/abcd"
+            android:layout_width="match_parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/cardviewoffer"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/offer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cashback"
+                android:layout_below="@+id/cardviewoffer"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

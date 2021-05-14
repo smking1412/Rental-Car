@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_container"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/bottom_sheet_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_layout">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/dheader"
+            android:id="@+id/add_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new card"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="22dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/add_label"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_marginStart="50dp"
+            android:id="@+id/number_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="XXXX-XXXX-XXXX-XXXX"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginStart="50dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="9"
+            android:layout_below="@id/number_layout"
+            android:id="@+id/expiry_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputLayoutStyle"
+
+                android:id="@+id/month_layout"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:id="@+id/month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="MM"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputLayoutStyle"
+
+                android:id="@+id/year_layout"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="YY"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputLayoutStyle"
+
+                android:id="@+id/cvv_layout"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="CVV"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+
+            android:layout_marginStart="50dp"
+
+            android:layout_below="@+id/expiry_layout"
+            android:id="@+id/name_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textCapCharacters"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CARD HOLDER NAME"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/name_layout"
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rect_green"
+            android:text="   Add   " />
+    </RelativeLayout>
+</ScrollView>

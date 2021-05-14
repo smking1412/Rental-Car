@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+<item
+    android:id="@+id/my_trips"
+    android:checkable="true"
+    android:icon="@drawable/mytrips"
+    android:title="My Trips"/>
+
+    <item
+        android:id="@+id/verify_licence"
+        android:checkable="true"
+        android:icon="@drawable/verifylicence"
+        android:title="Verify Licence"/>
+
+
+        <item
+            android:id="@+id/wallet"
+            android:checkable="true"
+            android:icon="@drawable/wallet"
+            android:title="Wallet"/>
+
+        <item
+            android:id="@+id/saved_cards"
+            android:checkable="true"
+            android:icon="@drawable/savedcards"
+            android:title="Saved Cards"/>
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/policies"
+        android:checkable="true"
+        android:icon="@drawable/policies"
+        android:title="Policies"/>
+
+
+    <item
+        android:id="@+id/help_and_support"
+        android:checkable="true"
+        android:icon="@drawable/helpandsupport"
+        android:title="Help and Support"/>
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/logout"
+        android:checkable="true"
+        android:icon="@drawable/exit"
+        android:title="Logout"/>
+    </group>
+
+</menu>
